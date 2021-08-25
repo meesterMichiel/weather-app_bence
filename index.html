@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weathernet</title>
+        <link href="img/favicon.png" type="image/png" rel="icon" sizes="16x16">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <script src="js/app.js" defer></script>
+        <script src="js/forecast.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="titlebar">
+                <img src="img/logo.png" id="weathernet">
+                <h1>WeatherNet</h1>
+            </div>
+            <div class="notification"></div>
+            <div class="weather-container">
+                <div class="day-name">Vandaag</div>
+                <div id="basic-info">
+                    <div class="weather-icon">
+                        <img src="img/icon/unknown.gif" alt="">
+                    </div>
+                    <div class="temperature-value">
+                        <p>--°<span>C</span></p>
+                    </div>
+                </div>
+                <div class="temperature-description">-</div>
+                <div class="location">-</div>
+            </div>
+            <div id="buttoncontainer">
+                <div id="buttonleft" class="button"><p>&#60;</p></div>
+                <div id="buttonright" class="button"><p>&#62;</p></div>
+            </div>
+            <div id="footer">
+                <p>&copy; 2021 Kazaretski</p>
+                <p>For privacy reasons: No data is sent.</p>
+            </div>
+        </div>
+    </body>
+</html>

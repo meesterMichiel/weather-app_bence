@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Futura Md BT, Futura BT, Futura Md, Futura, Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+}
+body {
+    background-image: url(../img/bg/unknown.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#titlebar {
+    margin: 0 10% 0 15%;
+    padding: 10px;
+}
+#titlebar img {
+    text-shadow: 6px white;
+    background-size: contain;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+#weathernet {
+    height: 60px;
+    width: 60px;
+}
+#weathernet, h1 {
+    vertical-align: middle;
+    display: inline-block;
+}
+.notification {
+    background-color: #f73c3caa;
+    display: none;
+}
+.notification p {
+    color: #f9f2f2;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+#basic-info, #buttonleft, #buttonright {
+    vertical-align: middle;
+}
+.weather-container {
+    position: fixed;
+    top: 45%;
+    left: 0;
+    right: 0;
+    bottom: 45%;
+    transform: translateY(-50%);
+    padding-bottom: 250px;
+    padding-top: 9vh;
+    padding-left: 4vw;
+    background-image: url(../img/gradient.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100vw;
+}
+.day-name {
+    text-align: center;
+    margin-bottom: 1vh;
+    padding: 0;
+}
+.weather-icon {
+    display: block;
+    margin-left: 50px;
+}
+.weather-icon img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.weather-icon, .temperature-value {
+    display: inline-block;
+    vertical-align: middle;
+}
+.temperature-value {
+    font-size: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+.temperature-value span {
+    font-size: 2rem;
+}
+.temperature-description {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.location {
+    text-align: center;
+    font-size: 1rem;
+}
+#buttoncontainer {
+    position: absolute;
+    margin-top: 31vh;
+    padding: 0;
+}
+.button {
+    background-color: #BCBCBC;
+    width: 40px;
+    padding: 5px;
+    display: inline-block;
+}
+.button p {
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+#buttonleft {
+    margin-left: 0;
+}
+#buttonright {
+    margin-left: 77vw;
+}
+.inactive {
+    background-color: #555;
+}
+.temperature-description {
+    line-height: 1.5vh;
+    color: #BCBCBC;
+}
+.location {
+    line-height: 1.5vh;
+}
+#footer {
+    background-color: #00000098;
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    padding: 7.5px;
+    width: 100vw;
+}
+#footer p {
+    color: white;
+}
